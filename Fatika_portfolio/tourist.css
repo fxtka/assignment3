@@ -1,0 +1,275 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Wrapper and Video */
+.wrapper {
+    position: relative;
+}
+
+video#World {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #ffffff; 
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header .logo {
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333333;
+    letter-spacing: 0.5px;
+}
+
+.header .navbar a {
+    color: #666666; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header .navbar a.active, .header .navbar a:hover {
+    color: #009688; 
+}
+
+.header .navbar a:hover {
+    color: white; 
+    background-color: #009688; 
+}
+
+.header .navbar a.active {
+    color: #666666; 
+    background-color: transparent; 
+    cursor: pointer;
+}
+
+.header .navbar a.active:hover {
+    color: white;
+    background-color: #009688; 
+}
+
+.header .icon {
+    display: none;
+}
+
+/* Page Content */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 60px 50px;
+    color: white;
+}
+
+.row .col {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.row .col h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.row .col p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Cards */
+.col1 {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    gap: 8px; /* Spacing between cards */
+    justify-content: space-between; /* Distribute cards evenly */
+}
+
+.card {
+    width: 350px;
+    height: 320px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 2px 6px;
+    background-color:white;
+    transition: transform 0.5s;
+    text-align: center;
+    color: #ededed;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #009688;
+    color: #081b29;
+}
+
+.card:hover button {
+    background-color:white;
+    color: #081b29;
+    transition: 0.3s;
+}
+
+.card h5 {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #222;
+}
+
+
+.card p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card button {
+    background: #009688;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background: #00796b;
+}
+
+/* Footer */
+.The-end {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.footer .logo1 .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .navbar1 {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer .navbar1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.footer .navbar1 a:hover,
+.footer .navbar1 a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.ce {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+.contact h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.email form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email input[type="email"] {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.email input[type="submit"] {
+    padding: 0.5rem;
+    background-color: #009688;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.email input[type="submit"]:hover {
+    background-color: gray;
+    color: white;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+    transform: scale(1.2);
+}
+
